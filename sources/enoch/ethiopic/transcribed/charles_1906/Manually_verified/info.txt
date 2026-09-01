@@ -1,0 +1,88 @@
+# Manual Verification Notes
+
+## How This Review Started
+
+I started this work after downloading the transcription files provided for the project.
+
+While organizing the chapters and putting the correct chapter text into the corresponding files, I noticed that some chapters had more than one generated version of the text. When I placed these versions side by side and compared them, I found that they were not always identical.
+
+This made it clear that the AI-generated transcription was having difficulty correctly recognizing some of the Ge'ez characters and their different forms. In some cases, the same characters or words were being interpreted differently between generations.
+
+Because of these inconsistencies, I decided that the transcriptions should undergo a manual review rather than relying solely on the generated text.
+
+## Manual Verification Process
+
+I began checking the chapters manually against the original scanned edition of R. H. Charles, *The Ethiopic Version of the Book of Enoch* (1906):
+
+https://archive.org/details/ethiopicversiono00charuoft/page/n3/mode/2up
+
+I worked through the text line by line, using a highlighter to mark each line as I checked it against the transcription.
+
+For additional reference when identifying Ge'ez characters and syllable forms, I used:
+
+* Ge'ez syllable reference:
+  https://mcgrawcenter.github.io/ethiopic/syllables/50.html
+* Ge'ez reference material:
+  https://hinstein.fandom.com/wiki/Ge%CA%BFez
+* A PDF reference on the Ethiopic/Ge'ez alphabet and its forms.
+
+The process was essentially:
+
+1. Take one line from the original scanned page.
+2. Compare it directly with the corresponding transcribed line.
+3. Examine individual Ge'ez characters and their forms.
+4. Check questionable characters against the Ge'ez alphabet and syllable references.
+5. Correct the transcription when the source clearly showed a different character or word.
+6. Continue line by line until the chapter had been reviewed.
+
+## Verification Workspace
+
+The manual verification was performed by comparing the transcription directly with the scanned 1906 edition, working through the text line by line.
+
+The following image shows the workspace used during the verification process:
+
+(./verification-workspace.png)
+
+## Errors Found
+
+During the manual review, I found many transcription errors.
+
+A significant number of these appear to come from difficulties in recognizing Ge'ez characters, particularly when characters have visually similar forms. Different generated versions of the same chapter could therefore produce different readings of the same word or line.
+
+The manual comparison made it possible to identify these inconsistencies and correct them against the original scanned source.
+
+## Scope of This Work
+
+This manual review currently covers:
+
+`ch01.txt` through `ch24.txt`
+
+The files in this directory represent the versions that I manually reviewed and corrected during this process.
+
+## Planned Consolidated Text
+
+After completing all of the batches, I plan to create a single JSON file containing the complete text of all verified chapters combined into one consolidated version.
+
+As part of preparing this final combined text, I plan to remove transcription artifacts and editorial insertions that are not part of the continuous text itself, including:
+
+* cross symbols and similar markers;
+* asterisks (`*`);
+* small superscript numbers;
+* other inserted reference or editorial markers;
+* other unnecessary transcription artifacts.
+
+The goal is to produce a clean, consolidated representation of the manually verified text while preserving the actual Ge'ez text of the chapters.
+
+## Reference
+
+Primary source:
+
+**R. H. Charles, *The Ethiopic Version of the Book of Enoch*, 1906, Clarendon Press.**
+
+The primary verification was performed directly against the scanned pages of the original edition, with additional Ge'ez alphabet and syllable references used when individual characters required closer examination.
+
+## Status
+
+**Chapters manually reviewed:** 1–24
+
+**Method:** Line-by-line comparison against the 1906 scanned edition, with additional Ge'ez character and syllable references used where necessary.
